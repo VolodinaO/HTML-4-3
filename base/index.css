@@ -1,4 +1,10 @@
-/*Ссылка на шрифты кроме основного 'https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700'*/
+@import url('https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700');
+
+@font-face {
+    font-family: "English Towne";
+    src: url(EnglishTowne.ttf);
+}
+
 body
 {
     width: 1200px;
@@ -22,7 +28,7 @@ body
 .header__info
 {
     float: left;
-
+    text-align: center;
     box-sizing: border-box;
     width: 200px;
     padding: 25px 10px;
@@ -40,18 +46,27 @@ body
 .header__weather-title
 {
     margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 1.17em;
+    text-align: center;
 }
 
 .header__weather-text
 {
     margin: 0;
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.1em;
 }
 
 .header__title
 {
     overflow: visible;
-
+    font-family: 'English Towne', serif;
+    font-size: 5.75em;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -67,7 +82,7 @@ body
 .sub-header__copyright
 {
     display: inline-block;
-
+    font-size: 0.6em;
     margin: 0 30px;
 }
 
@@ -88,6 +103,21 @@ body
 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 3.2em;
+    font-weight: bold;
+}
+
+.article__title_font_racing{
+    font-family: 'Racing Suns One', 'Farsan', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.article__title_font_farsan{
+    font-family: 'Farsan', cursive;
+    font-size: 2.3em;
+    font-weight: bold;
 }
 
 .article__help
@@ -96,23 +126,39 @@ body
     margin-bottom: 4px !important;
 }
 
+.article__content p{
+    margin: 0;
+    text-indent: 2ch;
+    font-size: 0.8em;
+    text-align: justify;
+}
 
 .article__add-text
 {
     margin-top: 10px;
     margin-bottom: 4px;
+    text-align: justify;
+    text-indent: 2ch;
+    font-size: 0.8em;
+    font-style: italic;
+
 }
 
 .article__author
 {
     display: block;
-
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
     margin-top: 10px;
 }
 
 .article__continue
 {
     display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
 }
 
 .article__image
@@ -128,9 +174,28 @@ body
     margin: 10px 0 5px 10px;
 }
 
+.article__image-caption{
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
 .article__subtitle
 {
     margin: 10px 0;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.article_columns_two p{
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+
+    column-gap: 15px;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
 }
 
 /*––––––––––––––––––Блок главной фотографии–––––––––*/
@@ -147,11 +212,19 @@ body
 .main-photo__title
 {
     margin: 0;
+    font-weight: bold;
+}
+
+.main-photo__caption{
+    font-size: 0.7rem;
+    text-align: right;
+    text-transform: uppercase;
 }
 
 .main-photo__desc
 {
     margin-bottom: 20px;
+    font-size: 0.8em;
 }
 
 /*––––––––––––––––––Линия разделения––––––––––––––––*/
